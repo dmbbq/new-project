@@ -1,11 +1,11 @@
 {
-  "name": "mimino-group-06",
+  "name": "new-project",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite --open",
-    "build": "vite build --base=/MIMINO1/",
+    "build": "vite build --base=/new-project/",
     "preview": "vite preview"
   },
   "devDependencies": {
