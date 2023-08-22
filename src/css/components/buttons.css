@@ -1,0 +1,107 @@
+/* ------ BUTTONS-for-DESKTOP-TABLET-and-MOBILE ------*/
+
+
+.btn {
+  width: fit-content;
+  display: block;
+  padding: 14px 35px;
+  color: var(--accent-yellow-color);
+  font-family: 'Montserrat Bold', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  border: 2px solid var(--white-color);
+  border-radius: 25px;
+  transition: background-color var(--timing-function), color var(--timing-function), border var(--timing-function);
+  
+}
+
+.button-grey {
+  background-color: rgba(0, 0, 0, 0.4);
+
+}
+
+.button-black {
+background-color: var(--black-color);
+
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active {
+  color: var(--accent-yellow-color);
+  background-color:var(--white-color);
+  border-color: var(--accent-yellow-color);
+}
+
+/* -------- BUTTONS-for-MODALS-of-DESKTOP-and-TABLET ------- */
+
+.btn-big {
+  width: fit-content;
+  display: block;
+  padding: 18px 38px;
+  color: var(--white-color);
+  background-color: var(--black-color);
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.2;
+  cursor: pointer;
+  border: 1px solid var(--accent-yellow-color);
+  transition: background-color var(--timing-function), color var(--timing-function), border var(--timing-function);
+}
+
+.btn-big:hover,
+.btn-big:focus,
+.btn-big:active {
+  color: var(--black-color);
+  background-color:var(--accent-yellow-color);
+}
+
+.button-big-black {
+  border-radius: 25px;
+}
+
+.button-modal-desk-tab {
+  padding-left: 117px;
+  padding-right: 117px;
+  border-radius: 2px;
+}
+
+/* -------BUTTONS-for-MOBILE------- */
+
+.btn-mob {
+  width: fit-content;
+  display: block;
+  padding: 20px 43px;
+  color: var(--white-color);
+  background-color: var(--black-color);
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  cursor: pointer;
+  border: 1px solid var(--accent-yellow-color);
+  transition: background-color var(--timing-function), color var(--timing-function), border var(--timing-function);
+  
+}
+
+.button-mobile-circle {
+  border-radius: 25px;
+
+} 
+
+.button-mobile-quadro {
+  border-radius: 2px;
+}
+
+.btn-mob:hover,
+.btn-mob:focus,
+.btn-mob:active {
+  color: var(--black-color);
+  background-color: var(--accent-yellow-color);
+}

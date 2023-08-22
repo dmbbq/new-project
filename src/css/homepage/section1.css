@@ -1,0 +1,323 @@
+/*-------------- ABOUT-RESTAURANT-HOMEPAGE---------------------*/
+
+.about-restaurant {
+    padding-top: 16px;
+    padding-bottom: 27px;
+    background: var(--fon-lemon-color);
+    margin: 0 auto;
+}
+
+.about-rest-title-container {
+    margin-bottom: 28px;
+}
+
+.about-pretitles {
+    font-family: 'Times New Roman', serif;
+    font-size: 20px;
+    line-height: 1em;
+    margin-bottom: 12px;
+    color: var(--second-text-color);
+}
+
+.about-titles {
+    font-family: 'Film P3 Bold', sans-serif;
+    font-size: 40px;
+    line-height: 1em;
+    letter-spacing: 0.3em;
+    margin-bottom: 12px;
+    color: var(--third-grey-color);
+    text-transform: uppercase;
+}
+
+.about-subtitles {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    max-width: 258px;
+    color: var(--primary-text-color);
+}
+
+.about-first-images {
+    max-width: 244px;
+    margin-left: auto;
+    margin-bottom: 32px;
+    border-radius: 2px;
+    box-shadow: 2px 2px 60px rgba(0, 0, 0, 0.25);
+}
+
+
+.about-second-images {
+    max-width: 200px;
+    border-radius: 2px;
+    box-shadow: 2px 2px 60px rgba(0, 0, 0, 0.25);
+}
+
+.about-secondary-subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    max-width: 163px;
+    color: var(--brown-color);
+}
+
+.second-picture-container {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 32px; */
+    column-gap: 20px;
+    margin-bottom: 32px;
+}
+
+/*---------------SLIDERS-for-Homepage-and-Restaurant-page---------*/
+
+.rest-slider-container
+ {
+    width: 245px;
+    margin-left: auto;
+}
+
+.about-hotel-slider-container {
+    width: 245px;
+    margin-left: 0;
+}
+
+.rest-swiper-slide {
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    background: var(--white-color);
+    display: flex;
+}
+
+.left-swiper-arrow {
+    width: 30px;
+    height: 16px;
+    fill: black;
+    border: none;
+}
+
+.right-swiper-arrow {
+    width: 30px;
+    height: 16px;
+    fill: black;
+    border: none;
+}
+
+.about-rest-swiper-img,
+.about-hotel-swiper-img {
+    box-shadow: 2px 2px 60px rgba(0, 0, 0, 0.25);
+}
+
+.rest-swiper-buttons,
+.hotel-swiper-buttons {
+    display: flex;
+    gap: 33px;
+    margin-left: 27px;
+}
+
+/* .swiper-wrapper {
+    min-width: 0;
+} */
+
+/*-----------------------------Swiper-buttons-----------------------------*/
+
+.left-swiper-btn,
+.rigth-swiper-btn {
+    background-color: transparent;
+}
+
+.left-swiper-arrow,
+.right-swiper-arrow {
+    background-color: transparent;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    position: static;
+    width: 30px;
+    height: 16px;
+    margin-top: 30px;
+    z-index: 100;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    content: '';
+    opacity: 0;
+}
+
+.rest-swiper-buttons
+ {
+    justify-content: right;
+}
+
+/*--------------------------------Tablet-REST-and-HOTEL_CSS----------------------*/
+
+@media screen and (min-width: 1024px) {
+    .about-restaurant {
+        padding: 0;
+        padding-bottom: 39px;
+    }
+
+    .about-rest-title-container {
+        padding-top: 120px;
+        margin-bottom: 0;
+    }
+
+    .about-pretitles {
+        font-size: 36px;
+        line-height: 1.15;
+    }
+
+    .about-titles {
+        font-size: 64px;
+    }
+
+    .about-subtitles {
+        font-size: 16px;
+        line-height: 1.21;
+        max-width: 439px;
+    }
+
+    .about-rest-container {
+        display: flex;
+        gap: 26px;
+    }
+
+    .about-first-images {
+        max-width: 400px;
+        box-shadow: 5px 5px 70px rgba(0, 0, 0, 0.25);
+        position: relative;
+        top: -32px;
+
+        margin-bottom: 0;
+    }
+
+    .about-second-images {
+        max-width: 350px;
+        position: relative;
+        top: -56px;
+        box-shadow: 5px 5px 70px rgba(0, 0, 0, 0.25);
+    }
+
+    .about-secondary-subtitle {
+        position: relative;
+        font-size: 16px;
+        max-width: 312px;
+        top: 148px;
+    }
+
+    .second-picture-container {
+        justify-content: flex-start;
+        align-items: flex-start;
+        column-gap: 48px;
+        margin-bottom: 0;
+    }
+
+    .rest-slider-container,
+    .about-hotel-slider-container
+   {
+        width: 428px;
+        right: 40px;
+        margin-top: -83px;
+    }
+
+    .about-rest-swiper-img,
+    .about-hotel-swiper-img {
+        width: 194px;
+    }
+}
+
+/*--------------------------------Desktop-REST-and-HOTEL_CSS----------------------*/
+
+@media screen and (min-width: 1280px) {
+    .about-restaurant {
+        padding: 0;
+    }
+
+    .about-pretitles {
+        margin-bottom: 4px;
+    }
+
+    .about-titles {
+        margin-bottom: 24px;
+    }
+
+    .about-subtitles {
+        max-width: 518px;
+    }
+
+    .about-secondary-subtitle {
+        top: 115px;
+    }
+
+    .about-rest-container {
+        gap: 37px;
+    }
+
+    .about-first-images {
+        max-width: 460px;
+    }
+
+    .about-second-images {
+        max-width: 460px;
+        top: -78px;
+    }
+
+    .second-picture-container {
+        column-gap: 32px;
+    }
+
+    .rest-slider-container,
+    .about-hotel-slider-container
+     {
+        width: 534px;
+        position: relative;
+        left: 0;
+        bottom: 57px;
+        margin-top: -28px;
+    }
+
+    .about-rest-swiper-img,
+    .about-hotel-swiper-img {
+        width: 254px;
+    }
+
+    .rest-slider-container,
+    .about-hotel-slider-container {
+        margin-top: -178px;
+    }
+
+    .about-rest-swiper-img,
+    .about-hotel-swiper-img {
+        box-shadow: 5px 5px 60px rgba(0, 0, 0, 0.25);
+    }
+}
+
+/*--------------------------------Mobile-Adaptive-REST-and-HOTEL_CSS----------------------*/
+@media screen and (max-width: 384px) {
+    .about-pretitles {
+        font-size: 5vw;
+    }
+
+    .about-first-images {
+        width: 63vw;
+    }
+
+    .about-second-images {
+        width: 52vw;
+    }
+}

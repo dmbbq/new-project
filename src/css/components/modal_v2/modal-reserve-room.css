@@ -1,0 +1,12 @@
+.mt-tab-version-room {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+@media screen and (min-width: 1024px) {
+  .mt-tab-version-room {
+    width: 288px;
+    gap: 142px;
+  }
+}
