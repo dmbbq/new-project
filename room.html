@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>МІМІНО Room</title>
+  <!-- favicon  https://realfavicongenerator.net/ -->
+  <link rel="apple-touch-icon" sizes="180x180" href="data:image/png;base64,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">
+  <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABO1BMVEUODAcNCwcLCgYMCwYMCgYNDAcaFQtVRR6Hbi+QdTJ7ZCs4LhUZFQtJPBqDay6QdjJIOxoVEQk+Mxezkj7rwFD4ylX3yVTbs0u/nELkuk72yVTmu0+hhDgtJREqIxDIo0XpvlCOdDJjUSOqizvzxlPtwlGVeTRgTyKfgjfxxFKwkD0cFwwKCQZSQx7uwlHBnkMGBgU8Mhblu072yFTTrEglHw8GBgQwKBLYsErgtk0yKRNWRh/vwlK+m0EYFAoLCQY5LxXkuU7RqkgkHg4sJBHUrUngt000KxTvwlEsJRE0KxPvw1L4ylS+m0Lluk7Rq0jVrknht01RQh3ftkznvE+ykT0XFAo2LRTEn0MiHQ7HokTmvE/Sq0gxKRMbFws6MBYvJxIQDggWEwozKhMSDwgUEQk2LBQVEgn///9tTTqUAAAAAWJLR0Roy2z0IgAAAAlwSFlzAAAOwgAADsIBFShKgAAAAAd0SU1FB+cCDgwjA3MwenYAAADOSURBVDjLY2AYUoCRiYmZiQVMMrFikWdhY+fg5OLm4eXj5xMQZMbULyQsIiomJi4hKSolKi0jy4gmzywnL6qgqKSsIqaqpq6hKaaljaZCR1dPSp/HwNDI2MTUzNxCytKKBU2BtY2YrZ29g6OUk7O9i6uUmzuGAg+wAkmQAk9XKUuvUQWDWIG3jy9QgZ+Yv7O9bIBYIHps2gcFh4SG2YcHhEREMslFRcfEoilgjOOOT0hkTAqPT05hTE2OT0vHSJNMTEA9rGCSgYWJhWEwAQCrZE2CXa4b1wAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyMy0wMi0xNFQxMjozNTowMyswMDowMKG3qWIAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjMtMDItMTRUMTI6MzU6MDMrMDA6MDDQ6hHeAAAAV3pUWHRSYXcgcHJvZmlsZSB0eXBlIGlwdGMAAHic4/IMCHFWKCjKT8vMSeVSAAMjCy5jCxMjE0uTFAMTIESANMNkAyOzVCDL2NTIxMzEHMQHy4BIoEouAOoXEXTyQjWVAAAAAElFTkSuQmCC">
+  <link rel="icon" type="image/png" sizes="16x16" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAw1BMVEUODAcMCgYRDwgUEQkRDggVEQkNCwcPDQdOQByjhTirjDuBai2dgDaujjx4YioeGQwwKBLYsEqcfzZpViXswFGjhTllUiTkuk51XykLCgY+MxfovU9rWCYqIxDgt015YyskHg7askuLcjA9MhfnvE9tWSctJRHht017ZCsnIA+KcTBuWifiuE18ZSvbs0uLcTA5LxXTrEhkUiTNp0ZxXCglHg7Ho0V/ZywVEgkvJxIdGAwTEAkuJhIfGg0SDwghGw3///9TiRCmAAAAAWJLR0RA/tlc2AAAAAlwSFlzAAAOwgAADsIBFShKgAAAAAd0SU1FB+cCDgwjA3MwenYAAABrSURBVBjTY2AgCjAyMTOysLKxwfjsHJxc3Dy8fPxQEUYBQSFhEVExcQlJiICklLSMrJy8gqISTEBZRVVNXUNTUYuaAlLS2mo6upp6+jABA0MjWWMTUzNzRqhLLSytrG1s7dTsEX5hgyJsAAD+1g+48b/riQAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyMy0wMi0xNFQxMjozNTowMyswMDowMKG3qWIAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjMtMDItMTRUMTI6MzU6MDMrMDA6MDDQ6hHeAAAAV3pUWHRSYXcgcHJvZmlsZSB0eXBlIGlwdGMAAHic4/IMCHFWKCjKT8vMSeVSAAMjCy5jCxMjE0uTFAMTIESANMNkAyOzVCDL2NTIxMzEHMQHy4BIoEouAOoXEXTyQjWVAAAAAElFTkSuQmCC">
+  <link rel="manifest" href="data:application/manifest+json;base64,ewogICAgIm5hbWUiOiAiIiwKICAgICJzaG9ydF9uYW1lIjogIiIsCiAgICAiaWNvbnMiOiBbCiAgICAgICAgewogICAgICAgICAgICAic3JjIjogIi4vYW5kcm9pZC1jaHJvbWUtMTkyeDE5Mi5wbmciLAogICAgICAgICAgICAic2l6ZXMiOiAiMTkyeDE5MiIsCiAgICAgICAgICAgICJ0eXBlIjogImltYWdlL3BuZyIKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICAgInNyYyI6ICIuL2FuZHJvaWQtY2hyb21lLTI1NngyNTYucG5nIiwKICAgICAgICAgICAgInNpemVzIjogIjI1NngyNTYiLAogICAgICAgICAgICAidHlwZSI6ICJpbWFnZS9wbmciCiAgICAgICAgfQogICAgXSwKICAgICJ0aGVtZV9jb2xvciI6ICIjZmZmZmZmIiwKICAgICJiYWNrZ3JvdW5kX2NvbG9yIjogIiNmZmZmZmYiLAogICAgImRpc3BsYXkiOiAic3RhbmRhbG9uZSIKfQo=">
+  <link rel="mask-icon" href="/new-project/assets/safari-pinned-tab-77d5d179.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <!-- favicon -->
+  <!-- Slider -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+  <!-- Slider -->
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+  <!-- AOS -->
+  
+  <script type="module" crossorigin src="/new-project/assets/go_to_top_btn-d3c09f77.js"></script>
+  <link rel="stylesheet" href="/new-project/assets/go_to_top_btn-4622f3b3.css">
+</head>
+
+<body class="body-room">
+  <header>
+    <!-- Olena Trzewik + Ілля Шатохін -->
+    <div class="container">
+  <div class="header-thumb">
+    <a class="header-logo link" href="./index.html">MIMIHO</a>
+
+    <nav class="header-navigation">
+      <ul class="header-navigation-list list">
+        <li class="header-navigation-item">
+          <a class="header-navigation-link link" href="./restaurant.html">Ресторан</a>
+          <a href="tel:0955559533" class="header-navigation-tel link">
+            <svg class="header-navigation-icon" width="24" height="24">
+              <use href="./img/icons.svg#phone"></use>
+            </svg>
+            <span class="header-navigation-text">095 555 95 33</span>
+          </a>
+        </li>
+        <li class="header-navigation-item">
+          <a class="header-navigation-link link" href="./hotel.html">Готель</a>
+          <a href="tel:0668491089" class="header-navigation-tel link">
+            <svg class="header-navigation-icon" width="24" height="24">
+              <use href="./img/icons.svg#phone"></use>
+            </svg>
+            <span class="header-navigation-text">066 849 10 89</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <ul class="header-media-list">
+      <li class="header-media-item">
+        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer nofollow"
+          class="header-media-link link">
+          <svg class="header-media-icon" width="24" height="24">
+            <use href="./img/icons.svg#instagram"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="header-media-item">
+        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer nofollow"
+          class="header-media-link link">
+          <svg class="header-media-icon" width="24" height="24">
+            <use href="./img/icons.svg#facebook"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="header-media-item">
+        <a href="https://web.telegram.org" target="_blank" rel="noopener noreferrer nofollow"
+          class="header-media-link link">
+          <svg class="header-media-icon" width="24" height="24">
+            <use href="./img/icons.svg#telegram"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <address class="header-adress">
+    <a href="https://goo.gl/maps/CPFVVT7tqRFJdAgo7" target="_blank" rel="noopener noreferrer nofollow"
+      class="header-adress-link">
+      <svg class="header-adress-icon" width="24" height="24">
+        <use href="./img/icons.svg#location"></use>
+      </svg>
+      <p class="header-adress-text">
+        Україна, м. Полтава,<br>
+        вул. Маршала Бірюзова, 15
+      </p>
+    </a>
+  </address>
+</div>
+  </header>
+
+  <main>
+    <!-- Ілля Шатохін    slider-->
+    <section class="room-hero">
+  <div class="container">
+    <div class="swiper mySwiper_room">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <picture>
+            <source
+              srcset="./img/room-page/hero-room-slider0-for-desktop.jpg 1x, ./img/room-page/hero-room-slider0-for-desktop@2x.jpg 2x"
+              media="(min-width: 1280px)" width="1280" height="720">
+            <source
+              srcset="./img/room-page/hero-room-slider0-for-tablet.jpg 1x, ./img/room-page/hero-room-slider0-for-tablet@2x.jpg 2x"
+              media="(min-width: 1024px)" width="1024" height="720">
+            <source
+              srcset="./img/room-page/hero-room-slider0-for-mobile.jpg 1x, ./img/room-page/hero-room-slider0-for-mobile@2x.jpg 2x"
+              media="(max-width: 1023px)" width="414" height="740">
+            <img class="room-hero-image" src="./img/room-page/hero-room-slider0-for-mobile.jpg" alt="double room luxe" width="414"
+              height="740">
+          </picture>
+          <div class="room-hero-container">
+            <h2 class="room-hero-title">ДВОМІСНИЙ НОМЕР люкс</h2>
+            <p class="room-hero-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+              officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+            <button class="btn button-grey js-open-modal" data-modal="3">Переглянути ціни </button>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <picture>
+            <source
+              srcset="./img/room-page/hero-room-slider1-for-desktop.jpg 1x, ./img/room-page/hero-room-slider1-for-desktop@2x.jpg 2x"
+              media="(min-width: 1280px)" width="1280" height="720">
+            <source
+              srcset="./img/room-page/hero-room-slider1-for-tablet.jpg 1x, ./img/room-page/hero-room-slider1-for-tablet@2x.jpg 2x"
+              media="(min-width: 1024px)" width="1024" height="720">
+            <source
+              srcset="./img/room-page/hero-room-slider1-for-mobile.jpg 1x, ./img/room-page/hero-room-slider1-for-mobile@2x.jpg 2x"
+              media="(max-width: 1023px)" width="414" height="740">
+            <img class="room-hero-image" src="./img/room-page/hero-room-slider1-for-mobile.jpg" alt="triple room" width="414"
+              height="740">
+          </picture>
+          <div class="room-hero-container">
+            <h2 class="room-hero-title">ТРЬОХМІСНИЙ НОМЕР</h2>
+            <p class="room-hero-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+              officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+            <button class="btn button-grey js-open-modal" data-modal="4">Переглянути ціни</button>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <picture>
+            <source
+              srcset="./img/room-page/hero-room-slider2-for-desktop.jpg 1x, ./img/room-page/hero-room-slider2-for-desktop@2x.jpg 2x"
+              media="(min-width: 1280px)" width="1280" height="720">
+            <source
+              srcset="./img/room-page/hero-room-slider2-for-tablet.jpg 1x, ./img/room-page/hero-room-slider2-for-tablet@2x.jpg 2x"
+              media="(min-width: 1024px)" width="1024" height="720">
+            <source
+              srcset="./img/room-page/hero-room-slider2-for-mobile.jpg 1x, ./img/room-page/hero-room-slider2-for-mobile@2x.jpg 2x"
+              media="(max-width: 1023px)" width="414" height="740">
+            <img class="room-hero-image" src="./img/room-page/hero-room-slider2-for-mobile.jpg" alt="double room" width="414"
+              height="740">
+          </picture>
+          <div class="room-hero-container">
+            <h2 class="room-hero-title room-hero-title-fix">ДВОМІСНИЙ НОМЕР</h2>
+            <p class="room-hero-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+              officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+            <button class="btn button-grey js-open-modal" data-modal="5">Переглянути ціни</button>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next">
+        <svg class="room-hero-icon" width="40" height="40">
+          <use href="./img/icons.svg#right-arrow"></use>
+        </svg>
+      </div>
+      <div class="swiper-button-prev">
+        <svg class="room-hero-icon" width="40" height="40">
+          <use href="./img/icons.svg#left-arrow"></use>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+    <!-- Ілля Шатохін -->
+    <section class="room">
+  <div class="container">
+    <h3 class="room-amenities" data-aos="zoom-in-up">зручності у номері</h3>
+    <p class="room-text" data-aos="zoom-in-up">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+      consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+    <ul class="room-list">
+      <li class="room-item">
+        <h4 class="room-amenities-title" data-aos="zoom-in-up">ЗАГАЛЬНІ</h4>
+        <ul class="room-item-list">
+          <li class="room-item-list-item" data-aos="zoom-in-up">
+            <p class="room-list-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+              officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+          </li>
+          <li class="room-item-list-item" data-aos="zoom-in-down">
+            <p class="room-list-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+              officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+          </li>
+        </ul>
+      </li>
+      <li class="room-item">
+        <h4 class="room-amenities-title" data-aos="zoom-in-up">ВАННА КІМНАТА</h4>
+        <ul class="room-item-list">
+          <li class="room-item-list-item" data-aos="zoom-in-up">
+            <p class="room-list-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+              officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+          </li>
+          <li class="room-item-list-item" data-aos="zoom-in-down">
+            <p class="room-list-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+              officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+          </li>
+        </ul>
+      </li>
+      <li class="room-item">
+        <h4 class="room-amenities-title" data-aos="zoom-in-up">СПАЛЬНЯ</h4>
+        <p class="room-list-text" data-aos="zoom-in-up">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. </p>
+      </li>
+      <li class="room-item">
+        <h4 class="room-amenities-title" data-aos="zoom-in-up">КУХНЯ</h4>
+        <ul class="room-item-list">
+          <li class="room-item-list-item" data-aos="zoom-in-up">
+            <p class="room-list-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+          </li>
+          <li class="room-item-list-item" data-aos="zoom-in-down">
+            <p class="room-list-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+          </li>
+        </ul>
+      </li>
+      <li class="room-item">
+        <h4 class="room-amenities-title" data-aos="zoom-in-up">МЕДІА</h4>
+        <p class="room-list-text" data-aos="zoom-in-up">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+          officia consequat duis enim velit mollit. </p>
+      </li>
+    </ul>
+    <div class="room-thumb"  data-aos="zoom-in-down">
+      <button class="btn-mob button-mobile-circle js-open-modal" type="button" data-modal="1">ОФОРМИТИ БРОНЮВАННЯ</button>
+      <a class="room-link" href="./hotel.html"><span>Повернутися до перегляду номерів</span>
+        <svg class="room-link-icon" width="24" height="24">
+          <use href="./img/icons.svg#right-arrow"></use>
+        </svg>
+      </a>
+    </div>
+  </div>
+</section>
+  </main>
+
+  <footer>
+    <!-- Katerina Kha -->
+    <div class="footer-container container">
+  <a href="./index.html" class="footer-logo link">MIMIHO</a>
+
+  <div class="footer-wrap">
+
+    <ul class="footer-nav-list list">
+      <li class="footer-nav-item">
+        <a href="./index.html" class="footer-nav-link link">Головна</a>
+      </li>
+      <li class="footer-nav-item">
+        <a href="./restaurant.html" class="footer-nav-link link">Ресторан</a>
+      </li>
+      <li class="footer-nav-item">
+        <a href="./hotel.html" class="footer-nav-link link">Готель</a>
+      </li>
+    </ul>
+
+    <ul class="footer-soc-list list">
+      <li class="footer-soc-item">
+        <a href="https://telegram.org/" target="_blank" rel="noopener noreferrer" class="footer-soc-link link">
+          <p class="footer-soc-title">Telegram</p>
+          <svg class="footer-soc-icon" width="24" height="24">
+            <use href="./img/icons.svg#telegram"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="footer-soc-item">
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="footer-soc-link link">
+          <p class="footer-soc-title">Facebook</p>
+          <svg class="footer-soc-icon" width="24" height="24">
+            <use href="./img/icons.svg#facebook"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="footer-soc-item">
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="footer-soc-link link">
+          <p class="footer-soc-title">Instagram</p>
+          <svg class="footer-soc-icon" width="24" height="24">
+            <use href="./img/icons.svg#instagram"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+
+    <button id="scrollToTopBtn" class="to-top-btn" type="button">
+      Go to Top
+      <svg class="arrow-icon" width="16" height="16">
+        <use href="./img/icons.svg#icon-arrow-right"></use>
+      </svg>
+    </button>
+    
+  </div>
+</div>
+  </footer>
+
+  <!-- MODAL -->
+  <div class="overlay js-overlay-modal"></div>
+
+  <div class="modal" data-modal="1">
+  <div class="modal-reserv-tab">
+    <button class="mt-close-btn" type="button" data-modal-close>
+      <svg class="mt-modal-close-btn js-modal-close" width="24" height="24">
+        <use href="./img/icons.svg#modal-close"></use>
+      </svg>
+    </button>
+    <h2 class="mt-modal-title">ЗАБРОНЮВАТИ НОМЕР</h2>
+    <form class="mt-form-input">
+      <div class="mt-tab-wrap">
+        <div class="mt-tab-version-room">
+          <div class="mt-input-box">
+            <input class="mt-modal-input" type="text" name="user" id="userName_m1" required placeholder="Ваше ім’я">
+            <label class="mt-input-after-text" for="userName_m1">На кого забронювати номер?</label>
+          </div>
+
+          <div class="mt-input-box">
+            <input class="mt-modal-input" type="tel" name="tel" id="tel_m1" placeholder="+38 (___) ___-__-__" required>
+            <label class="mt-input-after-text" for="tel_m1">Номер телефону</label>
+          </div>
+        </div>
+
+        <div class="mt-tab-version">
+          <div class="mt-input-box">
+            <div class="mt-input-wrap">
+              <select class="mt-modal-input mt-modal-input-select" name="category-room" id="category-room">
+                <option value="Двомісний люкс">Двомісний люкс</option>
+                <option value="Двомісний стандарт">Трьохмісний</option>
+                <option value="Одномісний стандарт">Двомісний</option>
+              </select>
+              <svg class="mt-down-bold" width="24" height="24">
+                <use href="./img/icons.svg#down-bold"></use>
+              </svg>
+            </div>
+            <label class="mt-input-after-text" for="category-room">
+              Категорія номера</label>
+          </div>
+          <div class="mt-input-box">
+            <div class="mt-input-wrap">
+              <select class="mt-modal-input mt-modal-input-select" name="arrival-data" id="arrival-data">
+                <option value="Сьогодні">Сьогодні</option>
+                <option value="Завтра">Завтра</option>
+                <option value="Після завтра">Після завтра</option>
+              </select>
+              <svg class="mt-down-bold" width="24" height="24">
+                <use href="./img/icons.svg#down-bold"></use>
+              </svg>
+            </div>
+            <label class="mt-input-after-text" for="arrival-data">
+              Дата заїзду</label>
+          </div>
+
+          <div class="mt-input-box">
+            <div class="mt-input-wrap">
+              <select class="mt-modal-input mt-modal-input-select" name="leave-data" id="leave-data">
+                <option value="Сьогодні">Сьогодні</option>
+                <option value="Завтра">Завтра</option>
+                <option value="Після завтра">Після завтра</option>
+              </select>
+              <svg class="mt-down-bold" width="24" height="24">
+                <use href="./img/icons.svg#down-bold"></use>
+              </svg>
+            </div>
+            <label class="mt-input-after-text" for="leave-data">
+              Дата виїзду</label>
+          </div>
+        </div>
+      </div>
+
+      <button type="submit" class="mt-form-send btn-mob">
+        ОФОРМИТИ БРОНЮВАННЯ
+      </button>
+    </form>
+  </div>
+</div>
+  <div class="modal" data-modal="2">
+  <div class="modal-reserv-tab">
+    <button class="mt-close-btn" type="button" data-modal-close>
+      <svg class="mt-modal-close-btn js-modal-close" width="24" height="24">
+        <use href="./img/icons.svg#modal-close"></use>
+      </svg>
+    </button>
+    <h2 class="mt-modal-title">ЗАБРОНЮВАТИ СТОЛИК</h2>
+    <form class="mt-form-input">
+      <div class="mt-tab-wrap">
+        <div class="mt-tab-version">
+          <div class="mt-input-box">
+            <input class="mt-modal-input" type="text" id="userName_m2" name="user" required placeholder="Ваше ім’я">
+            <label class="mt-input-after-text" for="userName_m2">На кого забронювати столик?</label>
+          </div>
+          <div class="mt-input-box">
+            <input class="mt-modal-input" type="tel" name="tel" id="tel_m2" placeholder="+38 (___) ___-__-__" required>
+            <label class="mt-input-after-text" for="tel_m2">Номер телефону</label>
+          </div>
+        </div>
+        <div class="mt-tab-version">
+          <div class="mt-input-box">
+            <div class="mt-input-wrap">
+              <select class="mt-modal-input mt-modal-input-select" name="how-many-people" id="how-many-people">
+                <option value="1">1</option>
+                <option value="2-5">2-5</option>
+                <option value="6-10">6-10</option>
+                <option value="11-20">11-20</option>
+                <option value="21-50">21-50</option>
+                <option value="51-200">51-200</option>
+              </select>
+              <svg class="mt-down-bold" width="24" height="24">
+                <use href="./img/icons.svg#down-bold"></use>
+              </svg>
+            </div>
+            <label class="mt-input-after-text" for="how-many-people">
+              Столик на яку кількість осіб?</label>
+          </div>
+          <div class="mt-input-box">
+            <div class="mt-input-wrap">
+              <select class="mt-modal-input mt-modal-input-select" name="that-date" id="that-date">
+                <option value="Сьогодні">Сьогодні</option>
+                <option value="Завтра">Завтра</option>
+                <option value="Після завтра">Після завтра</option>
+              </select>
+              <svg class="mt-down-bold" width="24" height="24">
+                <use href="./img/icons.svg#down-bold"></use>
+              </svg>
+            </div>
+            <label class="mt-input-after-text" for="that-date">
+              На яку дату бронювати?</label>
+          </div>
+        </div>
+      </div>
+
+      <button type="submit" class="mt-form-send btn-mob">
+        ОФОРМИТИ БРОНЮВАННЯ
+      </button>
+    </form>
+  </div>
+</div>
+  <!-- Двомісний люкс -->
+
+<div class="modal" data-modal="3">
+  <div class="modal-reserv-tab">
+    <button class="mt-close-btn" type="button" data-modal-close>
+      <svg class="mt-modal-close-btn js-modal-close" width="24" height="24">
+        <use href="./img/icons.svg#modal-close"></use>
+      </svg>
+    </button>
+    <h2 class="mt-modal-title">ЦІНИ НА НОМЕР</h2>
+
+    <h3 class="mp-catecory-name">Двомісний люкс</h3>
+
+    <p class="mp-category-text">Категорія номеру</p>
+    <form class="mt-form-input-price">
+      <div class="mp-tab-wrap">
+        <div class="mt-input-box mp-input-box">
+          <select class="mt-modal-input mt-modal-input-select" name="nights_2_plus" id="nights_2_plus">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+          <label class="mt-input-after-text" for="nights_2_plus">Кількість ночей</label>
+        </div>
+
+        <div class="mt-input-box mp-input-box">
+          <p class="mt-modal-input mp-modal-input">1000</p>
+          <p class="mt-input-after-text">грн</p>
+        </div>
+      </div>
+
+      <button type="submit" class="mt-form-send btn-mob js-open-modal js-modal-close" data-modal="1">
+        ОФОРМИТИ БРОНЮВАННЯ
+      </button>
+    </form>
+  </div>
+</div>
+
+<!-- Трьохмісний -->
+
+<div class="modal" data-modal="4">
+  <div class="modal-reserv-tab">
+    <button class="mt-close-btn" type="button" data-modal-close>
+      <svg class="mt-modal-close-btn js-modal-close" width="24" height="24">
+        <use href="./img/icons.svg#modal-close"></use>
+      </svg>
+    </button>
+    <h2 class="mt-modal-title">ЦІНИ НА НОМЕР</h2>
+
+    <h3 class="mp-catecory-name">Трьохмісний</h3>
+
+    <p class="mp-category-text">Категорія номеру</p>
+    <form class="mt-form-input-price">
+      <div class="mp-tab-wrap">
+        <div class="mt-input-box mp-input-box">
+          <select class="mt-modal-input mt-modal-input-select" name="nights_3" id="nights_3">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+          <label class="mt-input-after-text" for="nights_3">Кількість ночей</label>
+        </div>
+
+        <div class="mt-input-box mp-input-box">
+          <p class="mt-modal-input mp-modal-input">1500</p>
+          <p class="mt-input-after-text">грн</p>
+        </div>
+      </div>
+
+      <button type="submit" class="mt-form-send btn-mob js-open-modal js-modal-close" data-modal="1">
+        ОФОРМИТИ БРОНЮВАННЯ
+      </button>
+    </form>
+  </div>
+</div>
+
+<!-- Двомісний -->
+
+<div class="modal" data-modal="5">
+  <div class="modal-reserv-tab">
+    <button class="mt-close-btn" type="button" data-modal-close>
+      <svg class="mt-modal-close-btn js-modal-close" width="24" height="24">
+        <use href="./img/icons.svg#modal-close"></use>
+      </svg>
+    </button>
+    <h2 class="mt-modal-title">ЦІНИ НА НОМЕР</h2>
+
+    <h3 class="mp-catecory-name">Двомісний</h3>
+
+    <p class="mp-category-text">Категорія номеру</p>
+    <form class="mt-form-input-price">
+      <div class="mp-tab-wrap">
+        <div class="mt-input-box mp-input-box">
+          <select class="mt-modal-input mt-modal-input-select" name="nights_2" id="nights_2">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+          <label class="mt-input-after-text" for="nights_2">Кількість ночей</label>
+        </div>
+
+        <div class="mt-input-box mp-input-box">
+          <p class="mt-modal-input mp-modal-input">750</p>
+          <p class="mt-input-after-text">грн</p>
+        </div>
+      </div>
+
+      <button type="submit" class="mt-form-send btn-mob js-open-modal js-modal-close" data-modal="1">
+        ОФОРМИТИ БРОНЮВАННЯ
+      </button>
+    </form>
+  </div>
+</div>
+  <!-- MODAL -->
+
+  <!-- Slider -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <!-- Slider -->
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 700,
+      once: true,
+    });
+  </script>
+  <!-- AOS -->
+  
+
+</body>
+
+</html>
