@@ -1,5 +1,5 @@
 .hero-hotel {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../../public/img/hotel/hotel-hero-for-mobile.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../../public/img/hotel/namho.jpg);
   padding-top: 181px;
   padding-bottom: 102px;
   background-repeat: no-repeat;
@@ -13,7 +13,7 @@
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
   .hero-hotel {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../../public/img/hotel/hotel-hero-for-mobile@2x.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../../public/img/hotel/namho.jpg);
   }
 }
 
@@ -33,7 +33,7 @@
 
 @media screen and (min-width: 414px) {
   .hero-hotel {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../../public/img/hotel/hotel-hero-for-tablet.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../../public/img/hotel/namho.jpg);
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -41,16 +41,16 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
     .hero-hotel {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../../public/img/hotel/hotel-hero-for-tablet@2x.jpg);
+      background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../../public/img/hotel/namho.jpg);
     }
   }
 }
 
 @media screen and (min-width: 1024px) {
   .hero-hotel {
-    padding-bottom: 64px;
+    padding-bottom: 95px;
     padding-top: 188px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../../public/img/hotel/hotel-hero-for-desktop.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../../public/img/hotel/namho.jpg);
   }
 
   .hero-text-fix {
@@ -62,7 +62,7 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
     .hero-hotel {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../../public/img/hotel/hotel-hero-for-desktop@2x.jpg);
+      background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../../public/img/hotel/namho.jpg);
     }
   }
 }

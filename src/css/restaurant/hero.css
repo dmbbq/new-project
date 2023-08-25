@@ -1,6 +1,6 @@
 .hero-restaurant {
   background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-    url(../../public/img/restaurant/rest-hero-for-mobile.jpg);
+    url(../../public/img/restaurant/nyrest.jpg);
   padding-top: 181px;
   padding-bottom: 102px;
   background-repeat: no-repeat;
@@ -24,7 +24,7 @@
   (min-resolution: 2dppx) {
   .hero-restaurant {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-      url(../../public/img/restaurant/rest-hero-for-mobile@2x.jpg);
+      url(../../public/img/restaurant/nyrest.jpg);
   }
 }
 
@@ -37,7 +37,7 @@
 @media screen and (min-width: 414px) {
   .hero-restaurant {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-      url(../../public/img/restaurant/rest-hero-for-tablet.jpg);
+      url(../../public/img/restaurant/nyrest.jpg);
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -49,7 +49,7 @@
           rgba(0, 0, 0, 0.65),
           rgba(0, 0, 0, 0.65)
         ),
-        url(../../public/img/restaurant/rest-hero-for-tablet@2x.jpg);
+        url(../../public/img/restaurant/nyrest.jpg);
     }
   }
 }
@@ -57,7 +57,7 @@
 @media screen and (min-width: 1024px) {
   .hero-restaurant {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-      url(../../public/img/restaurant/rest-hero-for-desktop.jpg);
+      url(../../public/img/restaurant/nyrest.jpg);
     padding-top: 188px;
     padding-bottom: 64px;
   }
@@ -76,7 +76,7 @@
           rgba(0, 0, 0, 0.65),
           rgba(0, 0, 0, 0.65)
         ),
-        url(../../public/img/restaurant/rest-hero-for-desktop@2x.jpg);
+        url(../../public/img/restaurant/nyrest.jpg);
     }
   }
 }

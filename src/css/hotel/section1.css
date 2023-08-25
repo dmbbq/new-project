@@ -12,7 +12,7 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 1.15;
-    color: var(--second-text-color);
+    color: #877770;
     margin-bottom: 8px;
 }
 
@@ -144,10 +144,20 @@
 .foto-hotel-s2-tablet {
     display: none;
 }
+.foto-hotel-s1-tablet{
+    background-image: url(../../public/img/hotel/nami1.jpg);
+    width: 400px;
+    height: 524px;
+    background-repeat: no-repeat;
+    margin-top: -94px;
+    background-size: cover;
+}
 
-.foto-hotel-s1-tablet,
+
+
+
 .foto-hotel-s2-tablet {
-    background-image: url(../../public/img/hotel/hotel-double1-room-img1-for-tablet.jpg);
+    background-image: url(../../public/img/hotel/nami7.jpg);
     width: 400px;
     height: 524px;
     background-repeat: no-repeat;
@@ -161,7 +171,7 @@
 
     .foto-hotel-s1-tablet,
     .foto-hotel-s2-tablet {
-        background-image: url(../../public/img/hotel/hotel-double1-room-img1-for-tablet@2x.jpg);
+        background-image: url(../../public/img/hotel/nami1.jpg../../public/img/hotel/nami1.jpg);
         background-size: cover;
     }
 }
@@ -275,7 +285,7 @@
 
     .foto-hotel-s1-tablet,
     .foto-hotel-s2-tablet {
-        background-image: url(../../public/img/hotel/hotel-double1-room-img1-for-desktop.jpg);
+        background-image: url(../../public/img/hotel/nami7.jpg);
         height: 574px;
         width: 460px;
         background-repeat: no-repeat;
@@ -290,10 +300,13 @@
 
         .foto-hotel-s1-tablet,
         .foto-hotel-s2-tablet {
-            background-image: url(../../public/img/hotel/hotel-double1-room-img1-for-desktop@2x.jpg);
+            background-image: url(../../public/img/hotel/nami7.jpg);
             background-size: cover;
         }
     }
+
+
+
 
 
 
@@ -341,6 +354,50 @@
 
     }
 
+}
+.foto-hotel-s3-tablet {
+    display: none;
+    background-image: url(../../public/img/hotel/nami3.jpg);
+    width: 400px;
+    height: 524px;
+    background-repeat: no-repeat;
+    margin-top: -94px;
+    background-size: cover;
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .foto-hotel-s3-tablet {
+        background-image: url(../../public/img/hotel/nami3jpg../../public/img/hotel/nami3.jpg);
+        background-size: cover;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .foto-hotel-s3-tablet {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .foto-hotel-s3-tablet {
+        background-image: url(../../public/img/hotel/nami3.jpg);
+        height: 574px;
+        width: 460px;
+        background-repeat: no-repeat;
+        margin-top: -104px;
+        background-size: cover;
+    }
+    
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .foto-hotel-s3-tablet {
+            background-image: url(../../public/img/hotel/nami3.jpg);
+            background-size: cover;
+        }
+    }
 }
 
 /*---------------------------SWIPER-------------------------------*/
