@@ -5,6 +5,10 @@
   padding-bottom: 32px;
   background-color: var(--fon-lemon-color);
 }
+.hero-btn{
+  margin-top: 50px;
+}
+
 
 .contacts-logo {
   font-family: 'Film P3 Bold';
@@ -264,8 +268,9 @@
   }
 
   .contacts-address-thumb {
+    margin-bottom: 50px;
     max-width: 285px;
-    height: 56px;
+    height: 100%;
     margin-bottom: 0;
     margin-left: initial;
     margin-right: 110px;
@@ -307,6 +312,7 @@
   }
 
   .contacts-address-thumb {
+
     margin-right: 191px;
   }
 

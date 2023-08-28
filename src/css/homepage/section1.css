@@ -20,7 +20,7 @@
 }
 
 .about-titles {
-    font-family: 'Film P3 Bold', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 40px;
     line-height: 1em;
     letter-spacing: 0.3em;
@@ -30,9 +30,10 @@
 }
 
 .about-subtitles {
+    margin-top: 50px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    font-size: 12px;
+    font-size: 18px;
     line-height: 1.25;
     letter-spacing: 0.02em;
     max-width: 258px;
@@ -185,6 +186,9 @@
     .about-titles {
         font-size: 64px;
     }
+    .about-titles2 {
+        font-size: 45px;
+    }
 
     .about-subtitles {
         font-size: 16px;
@@ -223,7 +227,7 @@
     .second-picture-container {
         justify-content: flex-start;
         align-items: flex-start;
-        column-gap: 48px;
+        column-gap: 165px;
         margin-bottom: 0;
     }
 
@@ -249,19 +253,18 @@
     }
 
     .about-pretitles {
-        margin-bottom: 4px;
+        margin-bottom: 20px;
     }
 
-    .about-titles {
-        margin-bottom: 24px;
-    }
 
     .about-subtitles {
+        font-size: 25px;
         max-width: 518px;
     }
 
     .about-secondary-subtitle {
-        top: 115px;
+        font-size: 18px;
+        top: 90px;
     }
 
     .about-rest-container {
@@ -278,6 +281,7 @@
     }
 
     .second-picture-container {
+        margin-right: 365px;
         column-gap: 32px;
     }
 

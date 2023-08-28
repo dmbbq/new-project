@@ -22,7 +22,7 @@
 }
 
 .zero-title {
-    font-family: 'Film P3 Bold';
+    font-family: 'Montserrat';
     font-size: 40px;
     line-height: calc(43 / 40);
     letter-spacing: 0.3em;
@@ -96,20 +96,21 @@
     }
     
     .zero-pre-title {
-        font-size: 32px;
+        font-size: 38px;
         line-height: calc(37 / 32);
-        margin-bottom: 4px;
+        margin-bottom: 10px;
     }
     
     .zero-title {
         font-size: 64px;
+        letter-spacing: 18px;
         line-height: calc(69 / 64);
         margin-bottom: 24px;
     }
     
     .zero-after-title {
         max-width: 439px;
-        font-size: 16px;
+        font-size: 20px;
         line-height: calc(20 / 16);
         margin-bottom: 142px;
     }
@@ -156,6 +157,7 @@
     }
     
     .zero-after-title {
+        font-size: 20px;
         max-width: 518px;
         margin-bottom: 162px;
     }
@@ -163,6 +165,9 @@
     .zero-pic-first {
         right: 180px;
         top: -153px;
+    }
+    .zero-text{
+        font-size: 20px;
     }
     
     .zero-wrap {

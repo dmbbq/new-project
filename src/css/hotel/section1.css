@@ -33,7 +33,7 @@
 }
 
 .topic-hotel-3 {
-    font-family: 'Times New Roman Bold';
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -282,8 +282,23 @@
         padding-top: 72px;
 
     }
+    .topic-hotel-4{
+        font-size: 18px;
+    }
+    .topic-hotel-4-s2{
+        font-size: 20px;
+    }
+    
+    .foto-hotel-s1-tablet{
+        background-image: url(../../public/img/hotel/nami1.jpg);
+        height: 574px;
+        width: 460px;
+        background-repeat: no-repeat;
+        margin-top: -104px;
+        background-size: cover;
+    }
 
-    .foto-hotel-s1-tablet,
+    
     .foto-hotel-s2-tablet {
         background-image: url(../../public/img/hotel/nami7.jpg);
         height: 574px;
@@ -477,9 +492,9 @@
 }
 
 @media screen and (min-width: 1280px) {
-    .section-hotel {
+    /* .section-hotel {
         padding-bottom: 0;
-    }
+    } */
 
     .hotel-swiper {
         width: 548px;
